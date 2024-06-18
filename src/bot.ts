@@ -76,6 +76,8 @@ IMPORTANT: Entire response must be in the language with ISO code: ${options.lang
       return ['', {}]
     }
 
+    info(`request: ${message}`)
+
     let response: ChatMessage | undefined
 
     if (this.api != null) {
